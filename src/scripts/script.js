@@ -2,7 +2,7 @@ const buttonToggle = document.getElementById('logo');
 
 function TrocaArco() {
     const arcoColorido = document.getElementById('arco-externo');
-    const cards = document.querySelectorAll('.cards');
+    const cards = document.querySelectorAll('.cards-container');
 
     cards.forEach(card => {
         // alert(card.classList);
@@ -12,6 +12,5 @@ function TrocaArco() {
 
     arcoColorido.classList.toggle('active-historia');
     arcoColorido.classList.toggle('active-respostas');
-
 
 }

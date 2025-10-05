@@ -1,17 +1,37 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, 'sans-serif';
     background-color: darkgray;
     padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header,footer {
+header, footer {
     background-color: lightgray;
     width: 100%;
+    padding: 1rem;
+    border: 2px solid #000;
 }
 
 header *, footer * {
     display: inline-block;
     vertical-align: middle;
+}
+
+header {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkblue;
+    margin-left: 1rem;
 }
 
 /* #logo-container {
@@ -29,22 +49,120 @@ header *, footer * {
 
 main {
     background-color: gray;
-
+    width: 100%;
+    height: 600px;
+    padding: 1rem;
+    border: 2px solid #000;
+    margin-top: -2px;
 }
 
-.cards {
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    line-height: 1.5rem;
+}
+
+#redes-sociais {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: dimgray;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+}
+
+#redes-sociais li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+#redes-sociais li a {
+    text-decoration: none;
+    color: rgb(221, 217, 217);
+    font-weight: bold;
+}
+
+.bussola {
+    width: 100%;
+    margin: auto;
+    /* padding: 1rem; */
+    margin-bottom: 1rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: ". . . . norte norte norte . . . ."
+                        "oeste oeste oeste . centro centro centro . leste leste leste"
+                        ". . . . sul sul sul . . . .";
+    gap: 0.1rem;
+    justify-items: center;
     position: relative;
     z-index: 1;
 }
 
+.bussola-card {
+    background-color: lightgray;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    height: 5rem;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: darkblue;
+}
+
+.bussola-card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.norte {
+    grid-area: norte;
+}
+
+.leste {
+    grid-area: leste;
+}
+.sul {
+    grid-area: sul;
+}
+.oeste {
+    grid-area: oeste;
+}
+.centro {
+    grid-area: centro;
+}
+
 #arco-externo {
-    /* display: inline-block; */
+    /* position: relative; */
+    /* top: -27rem; */
     position: absolute;
-    top: 100px;
-    left: calc(50% - 150px);
+    top: 25.3rem;
+    left: calc(50% - 10rem);
     z-index: 0;
-    width: 300px;
-    height: 300px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
 }
 
@@ -73,6 +191,24 @@ main {
     position: relative;
     top: 5%;
     left: 5%;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .hidden {

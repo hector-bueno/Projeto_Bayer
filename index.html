@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One-Page Hector Bueno</title>
     <link rel="shortcut icon" href="./src/imgs/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
@@ -17,55 +20,63 @@
     </header>
     <main>
         <h1>Hector Ricardo Bueno</h1>
-        <h2>Bacharelado em Tecnologia da Informação (início: 07/2023) • Desenvolvedor Júnior / Estágio em TI</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/hector-bueno/">LinkedIn</a></li>
-            <li><a href="https://github.com/hector-bueno">GitHub</a></li>
-            <li><a href="https://www.salesforce.com/trailblazer/hectorbueno">Salesforce TrailHead</a></li>
+        <h2>Bacharelado em Tecnologia da Informação<br>(Término Previsto: Dezembro/2027)</h2>
+        <ul id="redes-sociais">
+            <li><a href="https://www.linkedin.com/in/hector-bueno/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/hector-bueno" target="_blank">GitHub</a></li>
+            <li><a href="https://www.salesforce.com/trailblazer/hectorbueno" target="_blank">SF TrailHead</a></li>
         </ul>
         <section class="bussola" id="bussola-respostas">
-            <section class="cards" id="card-respostas">
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-1">Pergunta 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+            <section class="cards-container" id="card-respostas">
+                <div class="bussola-card norte">
+                    <h3 class="card-titulo" id="card-titulo-1">VISÃO</h3>
+                    <p>Planejador</p>
                 </div>
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-2">Pergunta 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+                <div class="bussola-card leste">
+                    <h3 class="card-titulo" id="card-titulo-2">MISSÃO</h3>
+                    <p>Alunos no Mercado de Trabalho</p>
                 </div>
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-3">Pergunta 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+                <div class="bussola-card sul">
+                    <h3 class="card-titulo" id="card-titulo-3">OBJETIVOS</h3>
+                    <p>Replanejar o passo-a-passo</p>
                 </div>
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-4">Pergunta 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+                <div class="bussola-card oeste">
+                    <h3 class="card-titulo" id="card-titulo-4">VALORES</h3>
+                    <p>Vontade de Aprender</p>
+                </div>
+                <div class="bussola-card centro">
+                    <h3 class="card-titulo" id="card-titulo-5">PROPÓSITO</h3>
+                    <p>Aprendo melhor ensinando outros</p>
                 </div>
             </section>
-            <section class="cards hidden" id="card-historia">
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-1">Pergunta 1</h3>
-                    <p>ESTE É UM TESTE TESTOSAMENTE TESTOSO!!!</p>
+            <section class="cards-container hidden" id="card-historia">
+                <div class="bussola-card norte">
+                    <h3 class="card-titulo" id="card-titulo-1">VISÃO</h3>
+                    <p>Adaptar situação SPPREV planilha</p>
                 </div>
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-2">Pergunta 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+                <div class="bussola-card leste">
+                    <h3 class="card-titulo" id="card-titulo-2">MISSÃO</h3>
+                    <p>Empatia e porto-seguro de conhecimento</p>
                 </div>
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-3">Pergunta 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+                <div class="bussola-card sul">
+                    <h3 class="card-titulo" id="card-titulo-3">OBJETIVOS</h3>
+                    <p>Formato das aulas de Inglês</p>
                 </div>
-                <div class="bussola-card card">
-                    <h3 class="card-titulo" id="card-titulo-4">Pergunta 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt similique voluptas inventore tenetur, dolore vitae eum illum quam officiis, ipsa quasi nam consequuntur id rem odio sunt incidunt possimus.</p>
+                <div class="bussola-card oeste">
+                    <h3 class="card-titulo" id="card-titulo-4">VALORES</h3>
+                    <p>Ser menos técnico e mais divertido</p>
+                </div>
+                <div class="bussola-card centro">
+                    <h3 class="card-titulo" id="card-titulo-5">PROPÓSITO</h3>
+                    <p>DIY</p>
                 </div>
             </section>
             <div class="active-respostas" id="arco-externo">
                 <div class="arco"></div>
             </div>
         </section>
-        <button type="button" onclick="TrocaArco()">Teste</button>
     </main>
+    <button type="button" onclick="TrocaArco()">Trocar Grafico</button>
     <footer>Feito por Hector Bueno - 2025</footer>
 </body>
 <script src="./src/scripts/script.js"></script>
