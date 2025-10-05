@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+    padding: 1rem 3rem;
+}
+
+header,footer {
+    background-color: lightgray;
+    width: 100%;
+}
+
+header *, footer * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* #logo-container {
+    width: 4rem;
+    background-image: url('../imgs/hector.png');
+    background-size: cover;
+    background: gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+} */
+
+#logo {
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+}
+
+main {
+    background-color: gray;
+
+}
+
+.cards {
+    position: relative;
+    z-index: 1;
+}
+
+#arco-externo {
+    /* display: inline-block; */
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 150px);
+    z-index: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#arco-externo.active-respostas {
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+}
+
+#arco-externo.active-historia {
+    background: linear-gradient(90deg,rgb(0, 36, 8) 0%, rgb(9, 121, 33) 35%, rgb(21, 255, 0) 100%);
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+}
+
+#arco-externo:hover {
+    transform: rotate(0deg);
+    transition: all 1s ease-in-out;
+}
+
+.arco {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: gray;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.hidden {
+    display: none;
+}
