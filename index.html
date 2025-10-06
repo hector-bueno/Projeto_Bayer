@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsividade.css">
+    <link rel="stylesheet" href="./src/css/style.css" media="(max-width: 600px)">
 </head>
 <body>
     <header>
@@ -49,10 +50,11 @@
                     <p>Aprendo melhor ensinando outros</p>
                 </div>
             </section>
-            <section class="cards-container hidden" id="card-historia">
+            <!-- <section class="cards-container hidden" id="card-historia"> -->
+            <section class="cards-container" id="card-historia">
                 <div class="bussola-card norte">
                     <h3 class="card-titulo" id="card-titulo-1">VISÃO</h3>
-                    <p>Adaptar situação SPPREV planilha</p>
+                    <p>Planilha com Macros para Produtividade</p>
                 </div>
                 <div class="bussola-card leste">
                     <h3 class="card-titulo" id="card-titulo-2">MISSÃO</h3>
@@ -74,10 +76,16 @@
             <div class="active-respostas" id="arco-externo">
                 <div class="arco"></div>
             </div>
+            <!-- APAGAR -->
+            <div class="active-historia" id="arco-externo-historia">
+                <div class="arco"></div>
+            </div>
         </section>
     </main>
     <button type="button" onclick="TrocaArco()">Trocar Grafico</button>
-    <footer>Feito por Hector Bueno - 2025</footer>
+    <footer>
+        <p>Feito por Hector Bueno - 2025</p>
+    </footer>
 </body>
 <script src="./src/scripts/script.js"></script>
 </html>
